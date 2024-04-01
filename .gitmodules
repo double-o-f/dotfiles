@@ -7,3 +7,6 @@
 [submodule ".config/tmux/plugins/tmux-sensible"]
 	path = .config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/double-o-f/kickstart.nvim
