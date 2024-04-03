@@ -31,7 +31,9 @@ alias xkill='pkill --signal SIGTERM -f xinit'
 
 #PS1='[%n@%m %/]$ '
 #%(4~|.../%3~|%~)
-PS1=$'\e[30;44m%n@%m\e[0m \e[30;103m%(4~|%3~|%~)\e[0m\n> '
+#PS1=$'\e[30;44m%n@%m\e[0m \e[30;103m%(4~|%3~|%~)\e[0m\n> '
+
+PS1=$'\e[0m┌\e[95m▐\e[30;105m%n@%m\e[0m\e[95m▌\e[0m\e[92m▐\e[30;102m%(4~|%3~|%~)\e[0m\e[92m▌\e[0m\n└> '
 
 # complete from history with UP and DOWN arrows
 bindkey '\e[A' history-beginning-search-backward
