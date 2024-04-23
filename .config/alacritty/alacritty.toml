@@ -1,17 +1,28 @@
-
-[window]
-opacity = 0.8
+import = ["~/.config/alacritty/opacity.toml", 
+	"~/.config/alacritty/iterm.toml"]
 
 [window.padding]
 x = 6
 y = 6
 
+[window]
+decorations = "None"
+
 [env]
 TERM = "xterm-256color"
 
-
 [font]
 size = 12.0
+
+
+[keyboard]
+bindings = [
+{ key = "a", mods = "Shift|Alt", action = "ToggleFullScreen" },
+{ key = "u", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop100.sh"},
+{ key = "i", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop75.sh"},
+{ key = "o", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop0.sh"},
+]
+
 
 #[font.bold]
 #family = "hack"
@@ -28,3 +39,4 @@ size = 12.0
 #[font.normal]
 #family = "hack"
 #style = "Regular"
+
