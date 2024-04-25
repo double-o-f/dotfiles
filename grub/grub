@@ -1,0 +1,63 @@
+# GRUB boot loader configuration
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=3
+GRUB_DISTRIBUTOR="Arch"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+GRUB_CMDLINE_LINUX="fbcon=font:TER16x32 vt.default_red=0x28,0xeb,0xab,0xf6,0x47,0x7b,0x64,0xeb,0x56,0xec,0xc0,0xf9,0x49,0xa4,0x99,0xff vt.default_grn=0x28,0x41,0xe0,0xc7,0xa0,0x5c,0xdb,0xdb,0x56,0x53,0xe1,0xda,0xa4,0x7d,0xfa,0xff vt.default_blu=0x28,0x29,0x47,0x44,0xf3,0xb0,0xed,0xb2,0x56,0x57,0x7d,0x6a,0xf8,0xe9,0xf2,0xff"
+
+# Preload both GPT and MBR modules so that they are not missed
+GRUB_PRELOAD_MODULES="part_gpt part_msdos"
+
+# Uncomment to enable booting from LUKS encrypted devices
+#GRUB_ENABLE_CRYPTODISK=y
+
+# Set to 'countdown' or 'hidden' to change timeout behavior,
+# press ESC key to display menu.
+GRUB_TIMEOUT_STYLE=menu
+
+# Uncomment to use basic console
+GRUB_TERMINAL_INPUT=console
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL_OUTPUT=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `videoinfo'
+GRUB_GFXMODE=1920x1080x32,auto
+
+# Uncomment to allow the kernel use the same resolution used by grub
+GRUB_GFXPAYLOAD_LINUX=keep
+
+# Uncomment if you want GRUB to pass to the Linux kernel the old parameter
+# format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx"
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+GRUB_DISABLE_RECOVERY=true
+
+# Uncomment and set to the desired menu colors.  Used by normal and wallpaper
+# modes only.  Entries specified as foreground/background.
+#GRUB_COLOR_NORMAL="#ebdbb2/#282828"
+#GRUB_COLOR_HIGHLIGHT="#282828/#ebdbb2"
+
+# Uncomment one of them for the gfx desired, a image background or a gfxtheme
+#GRUB_BACKGROUND="/home/me/cod/grubtheme/grub_background.png"
+GRUB_THEME="/boot/grub/themes/my/theme.txt"
+
+# Uncomment to get a beep at GRUB start
+#GRUB_INIT_TUNE="480 440 1"
+
+# Uncomment to make GRUB remember the last selection. This requires
+# setting 'GRUB_DEFAULT=saved' above.
+#GRUB_SAVEDEFAULT=true
+
+# Uncomment to disable submenus in boot menu
+#GRUB_DISABLE_SUBMENU=y
+
+# Probing for other operating systems is disabled for security reasons. Read
+# documentation on GRUB_DISABLE_OS_PROBER, if still want to enable this
+# functionality install os-prober and uncomment to detect and include other
+# operating systems.
+#GRUB_DISABLE_OS_PROBER=false
