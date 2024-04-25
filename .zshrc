@@ -16,6 +16,9 @@ SAVEHIST=400000000
 #bindkey -v
 # End of lines configured by zsh-newuser-install
 
+export EDITOR="nvim"
+export TERM="alacritty"
+
 alias grep='grep --color=auto'
 alias la='ls -A --color=auto'
 alias ls='ls --color=auto'
