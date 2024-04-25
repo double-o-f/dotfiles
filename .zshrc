@@ -22,6 +22,8 @@ export TERM="alacritty"
 alias grep='grep --color=auto'
 alias la='ls -A --color=auto'
 alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
+alias lal'ls -A -L --color=auto'
 alias b='cd -'
 alias h='cd ~'
 alias ..='cd ..'
