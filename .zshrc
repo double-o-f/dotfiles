@@ -19,11 +19,12 @@ SAVEHIST=400000000
 export EDITOR="nvim"
 export TERM="alacritty"
 
+alias car='cat'
 alias grep='grep --color=auto'
 alias la='ls -A --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
-alias lal'ls -A -L --color=auto'
+alias lal='ls -A -L --color=auto'
 alias b='cd -'
 alias h='cd ~'
 alias ..='cd ..'
@@ -41,7 +42,10 @@ alias restart='sudo systemctl restart'
 alias status='sudo systemctl status'
 alias enable='sudo systemctl enable'
 alias disable='sudo systemctl disable'
-
+alias gidf='. $HOME/cod/esp32/esp-idf/export.sh'
+alias gst='git status'
+alias e='exit'
+alias c='clear'
 
 # Load version control information
 autoload -Uz vcs_info
