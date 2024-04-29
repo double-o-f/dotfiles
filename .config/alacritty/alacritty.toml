@@ -23,20 +23,18 @@ bindings = [
 { key = "o", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop0.sh"},
 ]
 
+[font.bold]
+family = "hack"
+style = "Bold"
 
-#[font.bold]
-#family = "hack"
-#style = "Bold"
-#
-#[font.bold_italic]
-#family = "hack"
-#style = "Bold Italic"
-#
-#[font.italic]
-#family = "hack"
-#style = "Italic"
-#
-#[font.normal]
-#family = "hack"
-#style = "Regular"
+[font.bold_italic]
+family = "hack"
+style = "Bold Italic"
 
+[font.italic]
+family = "hack"
+style = "Italic"
+
+[font.normal]
+family = "hack"
+style = "Regular"
