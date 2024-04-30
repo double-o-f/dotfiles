@@ -38,3 +38,6 @@ alias e='exit'
 alias c='clear'
 
 PS1='[\u@\h \W]\$ '
+
+export HISTSIZE=50000
+export HISTFILESIZE=400000000
