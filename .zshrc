@@ -73,7 +73,7 @@ colorReset="%{$reset_color%}"
 
 #PS1=$'\e[0m┌\e[30;105m▌%n@%m▐\e[30;102m▌%(4~|%3~|%~)▐\e[0m\n└> ' # this version looks better in tty
 #PS1=$'\e[0m┌\e[95m▐\[30;105m%n@%m\e[0m\e[95m▌\e[0m\e[92m▐\e[30;102m%(4~|%3~|%~)\e[0m\e[92m▌\e[0m\n└> ' # background
-PROMPT='${colorReset}┌ ${fgMagenta}%n@%m ${fgGreen}%(4~|%3~|%~) ${fgBlue}(${vcs_info_msg_0_}) ${fgYellow}[%?]${colorReset}'$'\n''└> ' # background
+PROMPT='${colorReset}%{%G┌%} ${fgMagenta}%n@%m ${fgGreen}%(4~|%3~|%~) ${fgBlue}(${vcs_info_msg_0_}) ${fgYellow}[%?]${colorReset}'$'\n''%{%G└%}> '
 
 
 # complete from history with UP and DOWN arrows
