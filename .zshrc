@@ -33,6 +33,7 @@ alias cpr='rsync -aP'
 alias mvr='rsync -aP --remove-source-files'
 alias tls='tmux ls'
 alias tat='tmux attach -t'
+alias ta='tmux attach'
 alias waykill='pkill --signal SIGTERM -f kwin_wayland'
 alias xkill='pkill --signal SIGTERM -f xinit'
 #alias typs=". ~/.config/scripts/ttyps1.zsh"
@@ -46,6 +47,7 @@ alias gidf='. $HOME/cod/esp32/esp-idf/export.sh'
 alias gst='git status'
 alias e='exit'
 alias c='clear'
+alias blacritty="alacritty -o \"colors.primary.background = '#000000'\" &"
 
 # Load version control information
 autoload -Uz vcs_info
@@ -73,7 +75,7 @@ colorReset="%{$reset_color%}"
 
 #PS1=$'\e[0m┌\e[30;105m▌%n@%m▐\e[30;102m▌%(4~|%3~|%~)▐\e[0m\n└> ' # this version looks better in tty
 #PS1=$'\e[0m┌\e[95m▐\[30;105m%n@%m\e[0m\e[95m▌\e[0m\e[92m▐\e[30;102m%(4~|%3~|%~)\e[0m\e[92m▌\e[0m\n└> ' # background
-PROMPT='${colorReset}%{%G┌%} ${fgMagenta}%n@%m ${fgGreen}%(4~|%3~|%~) ${fgBlue}(${vcs_info_msg_0_}) ${fgYellow}[%?]${colorReset}'$'\n''%{%G└%}> '
+PROMPT='${colorReset}┌ ${fgMagenta}%n@%m ${fgGreen}%(4~|%3~|%~) ${fgBlue}(${vcs_info_msg_0_}) ${fgYellow}[%?]${colorReset}'$'\n''└> ' # background
 
 
 # complete from history with UP and DOWN arrows
