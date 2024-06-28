@@ -1,0 +1,56 @@
+# github Alacritty Colors
+
+# Default colors
+[colors.primary]
+#background = '#ffffff'
+#foreground = '#24292f'
+background = '#ebdbb2' # from gruvbox
+foreground = '#282828' # from gruvbox
+
+
+# switched white and black
+# Normal colors
+[colors.normal]
+# from catppuccin latte
+#black = '#6C6F85' # subtext0
+#black = '#5C5F77' # subtext1
+white   = '#959da5' # switched
+#red = '#D20F39' # red
+green = '#40A02B' # green
+yellow = '#DF8E1D' # yellow
+blue = '#1E66F5' # blue
+magenta = '#EA76CB' # pink
+cyan = '#179299' # teal
+#white = '#BCC0CC' # surface1
+black   = '#d1d5da' # switched
+
+#black   = '#24292e'
+red     = '#d73a49'
+#green   = '#28a745'
+#yellow  = '#dbab09'
+#blue    = '#0366d6'
+#magenta = '#5a32a3'
+#cyan    = '#0598bc'
+#white   = '#6a737d'
+
+# Bright colors
+[colors.bright]
+#black   = '#959da5'
+white = '#5C5F77' # subtext1 switched
+red     = '#cb2431'
+green   = '#22863a'
+yellow  = '#b08800'
+blue    = '#005cc5'
+magenta = '#5a32a3'
+cyan    = '#3192aa'
+#white   = '#d1d5da'
+black = '#BCC0CC' # surface1 switched
+
+
+#[[colors.indexed_colors]]
+#index = 16
+#color = '#d18616'
+
+#[[colors.indexed_colors]]
+#index = 17
+#color = '#cb2431'
