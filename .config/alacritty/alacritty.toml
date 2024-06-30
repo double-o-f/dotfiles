@@ -22,7 +22,7 @@ bindings = [
 { key = "i", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop75.sh"},
 { key = "o", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop0.sh"},
 { key = "d", mods = "Shift|Alt", command = "/home/me/.config/scripts/themed.sh"},
-{ key = "l", mods = "Shift|Alt", command = "/home/me/.config/scripts/themel.sh"},
+{ key = "s", mods = "Shift|Alt", command = "/home/me/.config/scripts/themel.sh"},
 ]
 
 [font.bold]
