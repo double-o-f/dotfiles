@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/double-o-f/kickstart.nvim
+[submodule ".config/scripts/arp-thing"]
+	path = .config/scripts/arp-thing
+	url = https://github.com/double-o-f/arp-thing.git
