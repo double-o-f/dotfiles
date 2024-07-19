@@ -23,6 +23,7 @@ alias cpr='rsync -aP'
 alias mvr='rsync -aP --remove-source-files'
 alias tls='tmux ls'
 alias tat='tmux attach -t'
+alias ta='tmux attach'
 alias waykill='pkill --signal SIGTERM -f kwin_wayland'
 alias xkill='pkill --signal SIGTERM -f xinit'
 #alias typs=". ~/.config/scripts/ttyps1.zsh"
@@ -36,6 +37,9 @@ alias gidf='. $HOME/cod/esp32/esp-idf/export.sh'
 alias gst='git status'
 alias e='exit'
 alias c='clear'
+alias blacritty="alacritty -o \"colors.primary.background = '#000000'\" &"
+alias arpthing="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arp.sh)"
+alias arpthingeth="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arpeth.sh)"
 
 PS1='[\u@\h \W]\$ '
 
