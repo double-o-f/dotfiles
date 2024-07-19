@@ -49,6 +49,7 @@ alias e='exit'
 alias c='clear'
 alias blacritty="alacritty -o \"colors.primary.background = '#000000'\" &"
 alias arpthing="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arp.sh)"
+alias arpthingeth="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arpeth.sh)"
 
 # Load version control information
 autoload -Uz vcs_info
