@@ -1,0 +1,1 @@
+dolphin set ctrl+r to refresh

@@ -18,6 +18,7 @@ SAVEHIST=400000000
 
 export EDITOR="nvim"
 export TERM="alacritty"
+#export TERM=tmux-256color
 
 alias car='cat'
 alias grep='grep --color=auto'
@@ -40,7 +41,7 @@ alias xkill='pkill --signal SIGTERM -f xinit'
 alias start='sudo systemctl start'
 alias stop='sudo systemctl stop'
 alias restart='sudo systemctl restart'
-alias status='sudo systemctl status'
+alias status='systemctl status'
 alias enable='sudo systemctl enable'
 alias disable='sudo systemctl disable'
 alias gidf='. $HOME/cod/esp32/esp-idf/export.sh'
@@ -50,6 +51,7 @@ alias c='clear'
 alias blacritty="alacritty -o \"colors.primary.background = '#000000'\" &"
 alias arpthing="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arp.sh)"
 alias arpthingeth="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arpeth.sh)"
+alias weechat='TERM=tmux-256color weechat'
 
 # Load version control information
 autoload -Uz vcs_info
