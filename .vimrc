@@ -7,3 +7,5 @@ nmap <C-N> :set relativenumber!<CR>
 
 nmap <C-P> :nohlsearch<CR>
 
+:syntax on
+
