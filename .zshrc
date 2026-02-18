@@ -15,7 +15,7 @@ HISTFILE=~/.histfile
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-source .posixshellrc
+source ~/.posixshellrc
 
 if [ $0 != '-zsh' ]; then
 	export TERM="alacritty"

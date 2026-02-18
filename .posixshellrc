@@ -1,4 +1,5 @@
-export HISTSIZE=50000
+export HISTFILE=~/.histfile
+export HISTSIZE=500000
 export HISTFILESIZE=400000000
 
 export EDITOR="vim"
