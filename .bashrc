@@ -17,7 +17,7 @@ bind '"\e[B":history-search-forward'
 bind '"\e[1;5C":forward-word'
 bind '"\e[1;5D":backward-word'
 
-source .posixshellrc
+source ~/.posixshellrc
 
 if [ $0 != '-bash' ]; then
         export TERM="alacritty"
