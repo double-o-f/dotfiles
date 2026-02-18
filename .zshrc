@@ -14,19 +14,25 @@ HISTFILE=~/.histfile
 HISTSIZE=50000
 SAVEHIST=400000000
 #bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export EDITOR="vim"
 #export EDITOR="nvim"
-export TERM="alacritty"
-#export TERM=tmux-256color
+
+if [ $0 != '-zsh' ]; then
+	export TERM="alacritty"
+	#export TERM="tmux-256color"
+fi
+
+#. "$HOME/.cargo/env"
 
 alias car='cat'
-alias grep='grep --color=auto'
-alias la='ls -A --color=auto'
-alias ls='ls --color=auto'
-alias ll='ls -l --color=auto'
-alias lal='ls -A -l --color=auto'
+alias grep='grep --color=always' #--color=auto'
+alias la='ls -A --color=always' #--color=auto'
+alias ls='ls --color=always' #--color=auto'
+alias ll='ls -lh --color=always' #--color=auto'
+alias lal='ls -A -lh --color=always' #--color=auto'
 alias b='cd -'
 alias h='cd ~'
 alias hh='cd ~/Desktop'
@@ -42,23 +48,19 @@ alias ta='tmux attach'
 alias waykill='pkill --signal SIGTERM -f kwin_wayland'
 alias xorgkill='pkill --signal SIGTERM -f xinit'
 #alias typs=". ~/.config/scripts/ttyps1.zsh"
-alias start='sudo systemctl start'
-alias stop='sudo systemctl stop'
-alias restart='sudo systemctl restart'
-alias status='systemctl status'
-alias enable='sudo systemctl enable'
-alias disable='sudo systemctl disable'
-#alias gidf='. $HOME/cod/esp32/esp-idf/export.sh'
+alias gidf='. $HOME/Projects/esp-idf/export.sh'
 alias gst='git status'
 alias e='exit'
 alias c='clear'
 alias blacritty="alacritty -o \"colors.primary.background = '#000000'\" &"
+alias tlacritty="alacritty -o \"window.opacity = 0\" &"
 alias arpthing="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arp.sh)"
 alias arpthingeth="(cd $HOME/.config/scripts/arp-thing/ ; $HOME/.config/scripts/arp-thing/arpeth.sh)"
-alias weechat='TERM=tmux-256color weechat'
+#alias weechat='TERM=tmux-256color weechat'
 alias pingthing='python3 $HOME/.config/scripts/ping.py'
 alias fl='fc -l'
 alias fz='find . -type f | fzy -l 20'
+alias less='less -R'
 
 # Load version control information
 autoload -Uz vcs_info
@@ -92,3 +94,7 @@ PROMPT='${colorReset}%{%G┌%} ${fgMagenta}%n@%m ${fgGreen}%(4~|%3~|%~) ${fgBlue
 # complete from history with UP and DOWN arrows
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
+
+# Keep Ctrl-Left and Ctrl-Right working when the above are used
+bindkey '\e[1;5C' forward-word
+bindkey '\e[1;5D' backward-word
