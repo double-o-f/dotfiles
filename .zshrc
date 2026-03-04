@@ -11,6 +11,9 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
+HISTSIZE=500000
+SAVEHIST=400000000
+
 #bindkey -v
 bindkey -e
 # End of lines configured by zsh-newuser-install
