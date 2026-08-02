@@ -1,13 +1,13 @@
 imap jj <Esc>
 
-:set incsearch hlsearch
+set incsearch hlsearch
 
-:set number
+set number
 nmap <C-N> :set relativenumber!<CR>
 
 nmap <C-P> :nohlsearch<CR>
 
-:syntax on
+syntax on
 
 set clipboard=unnamedplus
 
@@ -18,6 +18,10 @@ noremap <Del> "_x
 set shiftwidth=4 smarttab
 set expandtab
 set tabstop=8 softtabstop=0
+
+set scrolloff=15
+
+set ignorecase
 
 autocmd BufRead,BufNewFile *.s.arm set syntax=armasm
 autocmd BufRead,BufNewFile *.armasm set syntax=armasm
