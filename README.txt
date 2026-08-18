@@ -1,4 +1,4 @@
-root stuff goes root/
+root stuff goes in /
 kde_stuff stuff needs to be loaded in kde
-everything else goes in home~
+everything else goes in ~
 

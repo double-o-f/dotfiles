@@ -1,5 +1,3 @@
-import = ["~/.config/alacritty/opacity.toml", 
-	"~/.config/alacritty/theme.toml"]
 
 [window.padding]
 x = 6
@@ -18,12 +16,16 @@ size = 12.0
 [keyboard]
 bindings = [
 { key = "a", mods = "Shift|Alt", action = "ToggleFullScreen" },
-{ key = "u", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop100.sh"},
-{ key = "i", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop75.sh"},
-{ key = "o", mods = "Shift|Alt", command = "/home/me/.config/scripts/alacop0.sh"},
-{ key = "d", mods = "Shift|Alt", command = "/home/me/.config/scripts/themed.sh"},
-{ key = "s", mods = "Shift|Alt", command = "/home/me/.config/scripts/themel.sh"},
+{ key = "u", mods = "Shift|Alt", command = "/home/me/.config/alacritty/alacop100.sh"},
+{ key = "i", mods = "Shift|Alt", command = "/home/me/.config/alacritty/alacop75.sh"},
+{ key = "o", mods = "Shift|Alt", command = "/home/me/.config/alacritty/alacop0.sh"},
+{ key = "d", mods = "Shift|Alt", command = "/home/me/.config/alacritty/themed.sh"},
+{ key = "s", mods = "Shift|Alt", command = "/home/me/.config/alacritty/themel.sh"},
 ]
+
+[general]
+import = ["~/.config/alacritty/opacity.toml", 
+	"~/.config/alacritty/theme.toml"]
 
 [font.bold]
 family = "hack"
